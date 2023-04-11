@@ -1,83 +1,84 @@
 nav {
-  display: flex;
-  height: 64px;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  /* padding: 24px 18px; */
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: black;
+	display: flex;
+	height: 64px;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+	/* padding: 24px 18px; */
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: black;
 
-  a {
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+	a {
+		color: #fff;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
 
-    &:hover {
-      color: #fa2759;
-      transition: all 0.3s ease-in-out;
-    }
-  }
+		&:hover {
+			color: #fa2759;
+			transition: all 0.3s ease-in-out;
+		}
+	}
 }
 
 img {
-  height: 35px;
-  object-fit: cover;
-  cursor: pointer;
+	height: 35px;
+	object-fit: cover;
+	cursor: pointer;
 }
 
 svg {
-  display: block;
-  transition: all 0.3s ease-in-out;
-  color: white;
+	display: block;
+	transition: all 0.3s ease-in-out;
+	color: white;
 
-  &:hover {
-    color: #fa2759;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
+	&:hover {
+		color: #fa2759;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+	}
 }
 
 .links-container {
-  display: none;
-  gap: 60px;
+	display: none;
+	gap: 60px;
 }
 
 .offcanvas {
-  padding-top: 76px;
-  background-image: linear-gradient(#111010, #111010c2);
+	padding-top: 76px;
+	background-image: linear-gradient(#111010, #111010c2);
 
-  a {
-    padding: 25px 18px;
-    color: white;
-  }
+	a {
+		padding: 25px 18px;
+		color: white;
+	}
 }
 
 .btn-close {
-  position: absolute;
-  top: 36px;
-  right: 24px;
-  background-color: white !important;
+	position: absolute;
+	top: 36px;
+	right: 24px;
+	background-color: white !important;
 }
 
 @media screen and (min-width: 1025px) {
-  nav {
-    padding-right: 182px;
-    padding-left: 132.38px;
-  }
+	nav {
+		padding-right: 182px;
+		padding-left: 132.38px;
+		height: 86px;
+	}
 
-  .links-container {
-    display: flex;
-  }
+	.links-container {
+		display: flex;
+	}
 
-  .navbar-toggler {
-    display: none;
-  }
+	.navbar-toggler {
+		display: none;
+	}
 
-  .offcanvas {
-    display: none;
-  }
+	.offcanvas {
+		display: none;
+	}
 }

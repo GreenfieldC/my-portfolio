@@ -1,18 +1,22 @@
 body {
-  margin: 0;
-  scroll-behavior: smooth;
+	margin: 0;
+	scroll-behavior: smooth;
 
-  background-color: #111010;
+	background-color: #111010;
+}
+
+.max-width {
+	max-width: 1160px;
 }
 
 * {
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
 }
 
 @media screen and (min-width: 801px) {
-  body {
-    background-color: black;
-  }
+	body {
+		background-color: black;
+	}
 }
