@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { GreetingComponent } from './greeting/greeting.component';
 import { MainSiteComponent } from './main-site/main-site.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, GreetingComponent, MainSiteComponent],
+  declarations: [AppComponent, HeaderComponent, GreetingComponent, MainSiteComponent, MySkillsComponent],
   imports: [BrowserModule, NgbModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
