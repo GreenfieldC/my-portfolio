@@ -1,8 +1,7 @@
-.frame {
-	position: absolute;
-	top: 64px;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	/* overflow: scroll; */
+@media screen and (min-width: 1025px) {
+	/* 	app-greeting {
+		display: block;
+		height: calc(100vh - 86px);
+		max-height: 812px;
+	} */
 }

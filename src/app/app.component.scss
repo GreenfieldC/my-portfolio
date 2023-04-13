@@ -1,1 +1,9 @@
+.frame {
+	padding-top: 64px;
+}
 
+@media screen and (min-width: 801px) {
+	.frame {
+		padding-top: 86px;
+	}
+}
