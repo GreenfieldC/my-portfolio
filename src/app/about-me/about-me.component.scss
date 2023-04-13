@@ -57,6 +57,11 @@
 			align-items: center;
 			justify-content: center;
 
+			img {
+				height: 20px;
+				width: auto;
+			}
+
 			h3 {
 				text-align: center;
 				padding: unset;
@@ -78,17 +83,19 @@
 @media screen and (min-width: 801px) {
 	.about {
 		background-color: $background-dark-grey !important;
+		padding-left: 80px;
+		padding-right: 80px;
 	}
 
 	.info-header {
 		flex-direction: row !important;
 		align-items: flex-start !important;
-		justify-content: space-between !important;
+		justify-content: space-around !important;
 		gap: 50px;
-		padding-left: 100px;
-		padding-right: 100px;
 		padding-bottom: 66px;
 		border-bottom: 1px solid $secondary-color;
+		width: 100%;
+		max-width: 1000px;
 
 		p {
 			max-width: 400px;

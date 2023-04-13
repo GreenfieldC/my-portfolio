@@ -1,9 +1,14 @@
+@import 'variables';
+
 body {
 	margin: 0;
 	scroll-behavior: smooth;
 
-	background-color: #111010;
-	/* overflow-x: hidden !important; */
+	background-color: $background-dark-grey;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 h2 {
