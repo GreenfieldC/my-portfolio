@@ -1,4 +1,37 @@
+@import 'variables';
+
 .btns-container {
 	display: flex;
 	gap: 5px !important;
+
+	button {
+		background-color: transparent;
+		border-radius: unset;
+		border: 2px solid $primary-color;
+		color: white;
+		line-height: 1;
+		flex-basis: 100%;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $primary-color;
+		}
+	}
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 26px;
+	padding-top: 28px;
+}
+
+@media screen and (min-width: 320px) {
+	button {
+		width: 91px !important;
+		height: 50px !important;
+	}
 }
