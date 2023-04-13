@@ -12,6 +12,14 @@ h2 {
 	color: white;
 }
 
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 4rem;
+}
+
 .max-width {
 	max-width: 1160px;
 }
