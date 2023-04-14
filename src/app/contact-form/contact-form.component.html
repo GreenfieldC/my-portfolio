@@ -11,12 +11,14 @@
 			</span>
 		</div>
 
-		<form action="#">
+		<form (submit)="sendEmail()" method="post" #myForm ngNativeValidate>
 			<label>Name</label>
-			<input placeholder="Enter your name *" matInput required />
+			<input #nameField name="name" placeholder="Enter your name *" matInput required />
 
 			<label>Email address</label>
 			<input
+				#emailField
+				name="email"
 				matInput
 				placeholder="Enter your email address *"
 				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -24,9 +26,10 @@
 			/>
 
 			<label>Message</label>
-			<textarea placeholder="Enter your text *" matInput required></textarea>
+			<textarea #messageField name="message" placeholder="Enter your text *" matInput required></textarea>
 
-			<button mat-stroked-button color="warn">Send</button>
+			<button #sendButton mat-stroked-button color="warn">Send</button>
+			<!-- <mat-spinner></mat-spinner> -->
 		</form>
 	</div>
 </section>
