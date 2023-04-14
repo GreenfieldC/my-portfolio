@@ -1,33 +1,34 @@
-<form action="#">
-	<section>
-		<div class="container">
-			<div class="contact-heading">
-				<h1 class="m-0">Contact me.</h1>
-				<span>
-					Get in touch via the form below, or by emailing
+<section>
+	<div class="container">
+		<div class="contact-heading">
+			<h1 class="m-0 green">Contact me</h1>
+			<span>
+				Get in touch via the form below, or by emailing
 
-					<a href="mailto:christiangreenfield@web.de">
-						<span class="green">christiangreenfield@web.de</span>
-					</a>
-				</span>
-			</div>
-
-			<mat-form-field appearance="fill">
-				<mat-label>Name</mat-label>
-				<input placeholder="Enter your name *" matInput required />
-			</mat-form-field>
-			<mat-form-field appearance="fill">
-				<mat-label>Email address</mat-label>
-				<input matInput placeholder="Enter your email address *" required />
-				<mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
-			</mat-form-field>
-			<mat-form-field appearance="fill">
-				<mat-label>Message</mat-label>
-				<textarea placeholder="Enter your text *" matInput required></textarea>
-			</mat-form-field>
-			<button mat-stroked-button color="warn">Send</button>
+				<a href="mailto:christiangreenfield@web.de">
+					<span class="green">christiangreenfield@web.de</span>
+				</a>
+			</span>
 		</div>
-	</section>
-</form>
+
+		<form action="#">
+			<label>Name</label>
+			<input placeholder="Enter your name *" matInput required />
+
+			<label>Email address</label>
+			<input
+				matInput
+				placeholder="Enter your email address *"
+				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+				required
+			/>
+
+			<label>Message</label>
+			<textarea placeholder="Enter your text *" matInput required></textarea>
+
+			<button mat-stroked-button color="warn">Send</button>
+		</form>
+	</div>
+</section>
 
 <!-- <input matInput placeholder="Enter your email address *" [formControl]="email" required /> -->

@@ -10,6 +10,10 @@ section {
 		flex-direction: column;
 		padding: 0;
 		max-width: 675px;
+
+		* {
+			color: white;
+		}
 	}
 
 	.contact-heading {
@@ -23,6 +27,13 @@ section {
 			line-height: 30px;
 			color: #989898;
 		}
+	}
+
+	form {
+		margin-top: 48px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 	}
 
 	input {
