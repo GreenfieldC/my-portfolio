@@ -13,6 +13,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
 	declarations: [
@@ -23,6 +24,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 		MySkillsComponent,
 		MyWorkComponent,
   AboutMeComponent,
+  ContactFormComponent,
 	],
 	imports: [BrowserModule, NgbModule, MatButtonModule, AppRoutingModule, BrowserAnimationsModule],
 	providers: [],
