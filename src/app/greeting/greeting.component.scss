@@ -27,21 +27,21 @@
 	flex-direction: column;
 	align-items: center;
 
-	h1 {
+	/* h1 {
 		font-size: 1.3rem;
 		font-weight: 700;
 		line-height: 45px;
 		color: #ffffff;
-	}
+	} */
 }
 
-.pink {
-	color: #fa2759;
+/* .pink {
+	color: #fa2759 !important;
 }
 
 .green {
-	color: #2dfcd8;
-}
+	color: #2dfcd8 !important;
+} */
 
 .contact-btn {
 	width: 250px;
@@ -73,9 +73,9 @@
 }
 
 @media screen and (min-width: 480px) {
-	h1 {
+	/* 	h1 {
 		font-size: 2rem !important;
-	}
+	} */
 }
 
 @media screen and (min-width: 801px) {
@@ -83,10 +83,10 @@
 		padding-bottom: 3rem;
 	}
 
-	h1 {
+	/* 	h1 {
 		font-size: 2.5rem !important;
 		line-height: 90px;
-	}
+	} */
 
 	.profile-image {
 		height: 250px;
@@ -136,10 +136,10 @@
 }
 
 @media screen and (min-width: 1281px) {
-	h1 {
+	/* 	h1 {
 		font-size: 4rem !important;
 		line-height: 90px !important;
-	}
+	} */
 
 	.profile-image {
 		height: 300px;

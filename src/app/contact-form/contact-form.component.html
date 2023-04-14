@@ -1,1 +1,33 @@
-<p>contact-form works!</p>
+<form action="#">
+	<section>
+		<div class="container">
+			<div class="contact-heading">
+				<h1 class="m-0">Contact me.</h1>
+				<span>
+					Get in touch via the form below, or by emailing
+
+					<a href="mailto:christiangreenfield@web.de">
+						<span class="green">christiangreenfield@web.de</span>
+					</a>
+				</span>
+			</div>
+
+			<mat-form-field appearance="fill">
+				<mat-label>Name</mat-label>
+				<input placeholder="Enter your name *" matInput required />
+			</mat-form-field>
+			<mat-form-field appearance="fill">
+				<mat-label>Email address</mat-label>
+				<input matInput placeholder="Enter your email address *" required />
+				<mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+			</mat-form-field>
+			<mat-form-field appearance="fill">
+				<mat-label>Message</mat-label>
+				<textarea placeholder="Enter your text *" matInput required></textarea>
+			</mat-form-field>
+			<button mat-stroked-button color="warn">Send</button>
+		</div>
+	</section>
+</form>
+
+<!-- <input matInput placeholder="Enter your email address *" [formControl]="email" required /> -->

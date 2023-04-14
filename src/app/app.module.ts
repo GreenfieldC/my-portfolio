@@ -14,6 +14,8 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
 	declarations: [
@@ -23,11 +25,19 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 		MainSiteComponent,
 		MySkillsComponent,
 		MyWorkComponent,
-  AboutMeComponent,
-  ContactFormComponent,
+		AboutMeComponent,
+		ContactFormComponent,
 	],
-	imports: [BrowserModule, NgbModule, MatButtonModule, AppRoutingModule, BrowserAnimationsModule],
-	providers: [],
+	imports: [
+		BrowserModule,
+		NgbModule,
+		MatButtonModule,
+		MatFormFieldModule,
+		MatSelectModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+	],
+	providers: [{ provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'outline' } }],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
