@@ -20,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 @NgModule({
 	declarations: [
@@ -33,6 +34,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 		ContactFormComponent,
   FooterComponent,
   ImprintComponent,
+  LegalNoticeComponent,
 	],
 	imports: [
 		BrowserModule,
