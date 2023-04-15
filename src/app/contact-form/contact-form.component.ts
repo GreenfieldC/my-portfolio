@@ -33,10 +33,21 @@ export class ContactFormComponent implements OnInit {
 		});
 
 		/* Animation "Email has been sent" */
-
+		this.confirmEmail();
 		/* Reaktivierung und löschen der Inputfelder */
 		this.clearInputFields();
 		this.enableInputFields();
+	}
+
+	/***
+	 * Animation "Email has been sent"
+	 */
+	confirmEmail() {
+		let btn = this.sendButton.nativeElement;
+		btn.innerHTML = 'Email has been sent';
+		setTimeout(() => {
+			btn.innerHTML = 'Send';
+		}, 2000);
 	}
 
 	/**
