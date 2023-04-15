@@ -13,7 +13,15 @@
 
 		<form (submit)="sendEmail()" method="post" #myForm ngNativeValidate>
 			<label>Name</label>
-			<input #nameField name="name" placeholder="Enter your name *" matInput required />
+			<input
+				#nameField
+				name="name"
+				pattern="([a-zA-ZäöüÄÖÜß]+\s+){1,10}([a-zA-ZäöüÄÖÜß]+)"
+				placeholder="Enter your name *"
+				title="Enter your firstname and your surname, please."
+				matInput
+				required
+			/>
 
 			<label>Email address</label>
 			<input
@@ -28,8 +36,7 @@
 			<label>Message</label>
 			<textarea #messageField name="message" placeholder="Enter your text *" matInput required></textarea>
 
-			<button #sendButton mat-stroked-button color="warn">Send</button>
-			<!-- <mat-spinner></mat-spinner> -->
+			<button #sendButton>Send</button>
 		</form>
 	</div>
 </section>

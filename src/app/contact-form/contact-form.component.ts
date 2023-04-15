@@ -47,6 +47,7 @@ export class ContactFormComponent implements OnInit {
 		this.emailField.nativeElement.disabled = true;
 		this.messageField.nativeElement.disabled = true;
 		this.sendButton.nativeElement.disabled = true;
+		console.log(this.sendButton);
 	}
 
 	/**
