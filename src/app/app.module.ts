@@ -19,6 +19,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
 	declarations: [
@@ -31,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
 		AboutMeComponent,
 		ContactFormComponent,
   FooterComponent,
+  ImprintComponent,
 	],
 	imports: [
 		BrowserModule,

@@ -1,0 +1,19 @@
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+
+	* {
+		color: white !important;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	section {
+		padding-right: 132.38px;
+		padding-left: 132.38px;
+	}
+}

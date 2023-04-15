@@ -1,3 +1,5 @@
+@import 'variables';
+
 footer {
 	display: flex;
 	flex-direction: column;
@@ -18,6 +20,7 @@ footer {
 
 		.profiles-link-container {
 			display: flex;
+			align-items: center;
 			justify-content: space-between;
 			width: 100%;
 			max-width: 300px;
@@ -27,10 +30,21 @@ footer {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			gap: 1rem;
+			color: #8491a0;
 			* {
 				text-decoration: none;
 				color: #8491a0;
 				font-weight: 700;
+			}
+
+			a {
+				transition: all 0.3s ease-in-out;
+			}
+
+			a:hover {
+				transition: all 0.3s ease-in-out;
+				color: $primary-color;
 			}
 		}
 	}
