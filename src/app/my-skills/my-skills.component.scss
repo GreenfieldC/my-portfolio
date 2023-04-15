@@ -1,4 +1,4 @@
-section {
+.section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -54,7 +54,7 @@ img {
 }
 
 @media screen and (min-width: 801px) {
-	section {
+	.section {
 		background-color: #131111;
 	}
 

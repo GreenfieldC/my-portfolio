@@ -1,6 +1,11 @@
 @import 'variables';
 
-.about {
+.inner-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
 	.info-header {
 		display: flex;
 		flex-direction: column;
@@ -83,8 +88,9 @@
 @media screen and (min-width: 801px) {
 	.about {
 		background-color: $background-dark-grey !important;
-		padding-left: 80px;
-		padding-right: 80px;
+		padding-left: 132.38px;
+		padding-right: 132.38px;
+		width: 100%;
 	}
 
 	.info-header {
@@ -93,13 +99,17 @@
 		justify-content: space-around !important;
 		gap: 50px;
 		padding-bottom: 66px;
-		border-bottom: 1px solid $secondary-color;
 		width: 100%;
 		max-width: 1000px;
 
 		p {
 			max-width: 400px;
 		}
+	}
+
+	hr {
+		width: 100%;
+		border: 1px solid $secondary-color;
 	}
 
 	h2 {

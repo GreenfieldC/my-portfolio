@@ -1,6 +1,6 @@
 @import 'variables';
 
-section {
+.section {
 	* {
 		width: 100%;
 	}
@@ -92,7 +92,7 @@ section {
 }
 
 @media screen and (min-width: 1025px) {
-	section {
+	.section {
 		padding-right: 132.38px;
 		padding-left: 132.38px;
 	}
