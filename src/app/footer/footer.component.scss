@@ -1,0 +1,75 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	justify-content: space-between;
+	height: fit-content;
+
+	background-color: white;
+	padding: 21px 61px 9px 61px;
+
+	.inner-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+
+		.profiles-link-container {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 300px;
+		}
+
+		.imprint-legal-notice-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			* {
+				text-decoration: none;
+				color: #8491a0;
+				font-weight: 700;
+			}
+		}
+	}
+
+	span {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	footer {
+		padding: unset;
+		padding-left: 16px;
+		padding-right: 16px;
+		height: 150px;
+		align-items: center;
+		justify-content: center;
+
+		.inner-container {
+			justify-content: space-between !important;
+
+			flex-direction: row-reverse;
+			width: 100%;
+		}
+
+		.profiles-link-container {
+			justify-content: space-between;
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	footer {
+		height: 200px;
+		padding-right: 132.38px;
+		padding-left: 132.38px;
+	}
+
+	img {
+		height: 40px;
+		width: auto;
+	}
+}
