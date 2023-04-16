@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+	/* justify-content: space-between; */
+	width: 100% !important;
+	padding: unset;
+	margin: unset;
+}
+
+a {
+	margin-left: auto;
+}
+
+img {
+	transform: rotate(180deg);
+	cursor: pointer;
+}
+
+@media screen and (min-width: 1025px) {
+	.section {
+		padding-left: 132.38px;
+		padding-right: 132.38px;
+	}
+}

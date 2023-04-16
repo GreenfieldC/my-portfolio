@@ -21,6 +21,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { BtnToTopComponent } from './btn-to-top/btn-to-top.component';
 
 @NgModule({
 	declarations: [
@@ -35,6 +36,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
   FooterComponent,
   ImprintComponent,
   LegalNoticeComponent,
+  BtnToTopComponent,
 	],
 	imports: [
 		BrowserModule,
