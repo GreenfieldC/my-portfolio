@@ -22,7 +22,7 @@ export class MyWorkComponent implements OnInit {
 			category: 'angular',
 			description: 'My portfolio, that you are currently on.',
 			img: 'portfolio',
-			site: 'christian-greenfield.de',
+			site: '#header',
 			github: 'https://github.com/GreenfieldC/my-portfolio',
 		},
 		{

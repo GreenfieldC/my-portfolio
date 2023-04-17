@@ -38,6 +38,11 @@ button {
 		.project-on-display {
 			position: relative;
 
+			.project-img {
+				width: 274px;
+				height: 227.69px;
+			}
+
 			.project-details-overlay {
 				position: absolute;
 				top: 0;
@@ -76,7 +81,7 @@ button {
 					&:focus,
 					&:active {
 						background-color: $primary-color !important;
-						color: black !important;
+						color: white !important;
 					}
 				}
 			}
@@ -94,11 +99,6 @@ button {
 @media screen and (min-width: 801px) {
 	.projects-container {
 		padding-bottom: 96px;
-
-		/* .project-img {
-			width: 441px;
-			height: 367px;
-		} */
 
 		p {
 			font-size: 18px;
@@ -127,8 +127,8 @@ button {
 		max-width: 1150px !important;
 
 		.project-img {
-			width: 367px;
-			height: auto;
+			width: 441px !important;
+			height: auto !important;
 		}
 
 		.btns-container {
