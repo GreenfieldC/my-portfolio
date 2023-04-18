@@ -4,63 +4,31 @@
 			<img
 				data-aos="fade-right"
 				class="profile-image"
-				src="./../../assets/images/Bewerbungsphoto_klein-min.png"
+				src="./../../assets/images/about-img.png"
 				alt=""
 			/>
 
 			<div data-aos="fade-left" class="subtitle-quotation-container">
 				<h2>About me.</h2>
-				<p>"I'm a husband, father, musician and I enjoy learning and so forth bla bla"</p>
+				<p>"I'm a husband, father, musician and I enjoy learning"</p>
 			</div>
 		</div>
 		<hr />
 		<div class="info-body">
-			<div class="post" data-aos="fade-up">
+			<div
+				*ngFor="let post of posts; let i = index"
+				class="post"
+				data-aos="fade-up"
+			>
 				<div class="badge">
-					<img class="badges-icon" src="./../../assets/icons/walking-person.png" alt="walking person" />
+					<img
+						class="badges-icon"
+						src="./../../assets/icons/{{ post.img }}.png"
+						alt="{{ post.img }}"
+					/>
 				</div>
-				<h3>MY JOURNEY BEGAN</h3>
-				<p>
-					"In spring 2022, I began teaching myself JS, HTML, and CSS online through tutorials. After achieving
-					my first milestones, I became convinced that coding is something I would like to pursue as a
-					career."
-				</p>
-			</div>
-
-			<div class="post" data-aos="zoom-in-up">
-				<div class="badge">
-					<img class="badges-icon" src="./../../assets/icons/heart.png" alt="heart" />
-				</div>
-				<h3>FIRST EXPERIENCES</h3>
-				<p>
-					"In spring 2022, I began teaching myself JS, HTML, and CSS online through tutorials. After achieving
-					my first milestones, I became convinced that coding is something I would like to pursue as a
-					career."
-				</p>
-			</div>
-
-			<div class="post" data-aos="zoom-in-up">
-				<div class="badge">
-					<img class="badges-icon" src="./../../assets/icons/magnifying-glass.png" alt="heart" />
-				</div>
-				<h3>FIRST EXPERIENCES</h3>
-				<p>
-					"In spring 2022, I began teaching myself JS, HTML, and CSS online through tutorials. After achieving
-					my first milestones, I became convinced that coding is something I would like to pursue as a
-					career."
-				</p>
-			</div>
-
-			<div class="post" data-aos="zoom-in-up">
-				<div class="badge">
-					<img class="badges-icon" src="./../../assets/icons/plane.png" alt="heart" />
-				</div>
-				<h3>FIRST EXPERIENCES</h3>
-				<p>
-					"In spring 2022, I began teaching myself JS, HTML, and CSS online through tutorials. After achieving
-					my first milestones, I became convinced that coding is something I would like to pursue as a
-					career."
-				</p>
+				<h3>{{ post.title }}</h3>
+				<p>{{ post.note }}</p>
 			</div>
 		</div>
 	</div>

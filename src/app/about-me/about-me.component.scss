@@ -30,7 +30,7 @@
 			align-items: center;
 			justify-content: center;
 
-			h2 {
+			h3 {
 				padding-top: 2rem;
 			}
 
@@ -48,7 +48,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		padding: 80px 50px 64px 50px;
+		padding: 80px 16px 64px 16px;
 
 		.badge {
 			display: flex;
@@ -76,6 +76,7 @@
 				text-align: center;
 				padding: unset;
 				margin: unset;
+				text-transform: uppercase !important;
 			}
 
 			p {
@@ -124,5 +125,9 @@
 	p {
 		font-size: 18px !important;
 		line-height: 28px;
+	}
+
+	.info-body {
+		align-items: flex-start !important;
 	}
 }
