@@ -1,5 +1,9 @@
 @import 'variables';
 
+.button-selected {
+	background-color: $primary-color !important;
+}
+
 button {
 	background-color: transparent;
 	border-radius: unset;
