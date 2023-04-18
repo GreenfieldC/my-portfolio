@@ -1,5 +1,9 @@
 @import 'variables';
 
+* {
+	letter-spacing: 0px;
+}
+
 .inner-container {
 	display: flex;
 	flex-direction: column;
