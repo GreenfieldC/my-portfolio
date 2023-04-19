@@ -25,6 +25,14 @@ footer {
 			justify-content: space-between;
 			width: 100%;
 			max-width: 300px;
+
+			img {
+				transition: all 125ms ease-in-out;
+				&:hover {
+					transition: all 125ms ease-in-out;
+					transform: scale(1.1);
+				}
+			}
 		}
 
 		.imprint-legal-notice-container {
@@ -60,7 +68,7 @@ footer {
 		padding: unset;
 		padding-left: 16px;
 		padding-right: 16px;
-		height: 150px;
+		height: 74px;
 		align-items: center;
 		justify-content: center;
 
@@ -79,7 +87,7 @@ footer {
 
 @media screen and (min-width: 1025px) {
 	footer {
-		height: 200px;
+		height: 86px;
 		padding-right: 132.38px;
 		padding-left: 132.38px;
 	}

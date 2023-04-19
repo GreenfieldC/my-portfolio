@@ -24,20 +24,22 @@
 			width: 157px;
 			border-radius: 50%;
 		}
+
 		.subtitle-quotation-container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 
-			h3 {
-				padding-top: 2rem;
+			h2 {
+				padding-top: 1rem;
 			}
 
 			p {
 				text-align: center;
 				color: white;
 				max-width: 232px;
+				margin-bottom: 0px !important;
 			}
 		}
 	}
@@ -48,7 +50,7 @@
 		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: center;
-		padding: 80px 16px 64px 16px;
+		padding: 12px 16px 64px 16px;
 
 		.badge {
 			display: flex;
@@ -101,7 +103,6 @@
 
 	.info-header {
 		flex-direction: row !important;
-		align-items: flex-start !important;
 		justify-content: space-around !important;
 		gap: 50px;
 		padding-bottom: 66px;
@@ -129,5 +130,6 @@
 
 	.info-body {
 		align-items: flex-start !important;
+		padding-top: 80px !important;
 	}
 }

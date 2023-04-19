@@ -19,23 +19,21 @@ export class MySkillsComponent {
 			title: 'HTML/CSS',
 			img: 'html-css',
 		},
-		{
-			title: 'SCRUM',
-			img: 'scrum',
-		},
-		{
-			title: 'Design Thinking',
-			img: 'design-thinking',
-		},
-		{
-			title: 'Rest API',
-			img: 'rest-api',
-		},
 
 		{
 			title: 'TypeScript',
 			img: 'ts',
 		},
+		{
+			title: 'SCRUM',
+			img: 'scrum',
+		},
+
+		{
+			title: 'Rest API',
+			img: 'rest-api',
+		},
+
 		{
 			title: 'Firebase',
 			img: 'firebase',
