@@ -27,7 +27,7 @@ export class ContactFormComponent implements OnInit {
 		formData.append('email', this.emailField.nativeElement.value);
 		formData.append('message', this.messageField.nativeElement.value);
 
-		await fetch('https://christian-greenfield.developerakademie.net/send_mail.php', {
+		await fetch('https://christian-greenfield.de/send_mail.php', {
 			method: 'POST',
 			body: formData,
 		});
