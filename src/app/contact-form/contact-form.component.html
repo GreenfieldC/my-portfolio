@@ -17,8 +17,8 @@
 				#nameField
 				name="name"
 				pattern="([a-zA-ZäöüÄÖÜß]+\s+){1,10}([a-zA-ZäöüÄÖÜß]+)"
-				placeholder="Enter your name *"
-				title="Enter your firstname and your surname, please."
+				placeholder="Please enter your first and last name *"
+				title="Please enter your first and last name, please."
 				matInput
 				required
 			/>
@@ -34,7 +34,13 @@
 			/>
 
 			<label>Message</label>
-			<textarea #messageField name="message" placeholder="Enter your text *" matInput required></textarea>
+			<textarea
+				#messageField
+				name="message"
+				placeholder="Enter your text *"
+				matInput
+				required
+			></textarea>
 
 			<button #sendButton>Send</button>
 		</form>
