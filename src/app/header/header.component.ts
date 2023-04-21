@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 	openSideMenu: boolean = false;
+	selectedLanguage: string = 'en';
 
 	closeSideMenu() {
 		setTimeout(() => {

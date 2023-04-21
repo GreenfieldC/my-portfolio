@@ -6,19 +6,44 @@
 		</a>
 
 		<div class="links-btn-container">
-			<div class="links-container">
-				<a
-					class="nav-link active"
-					routerLink="/"
-					routerLinkActive="active"
-					>HOME</a
+			<div class="links-language-btn-container">
+				<div class="links-container">
+					<a
+						class="nav-link active"
+						routerLink="/"
+						routerLinkActive="active"
+						>HOME</a
+					>
+					<a class="nav-link" href="#about" routerLinkActive="active"
+						>ABOUT ME</a
+					>
+					<a
+						class="nav-link"
+						href="#portfolio"
+						routerLinkActive="active"
+						>PORTFOLIO</a
+					>
+				</div>
+				<mat-button-toggle-group
+					name="favoriteColor"
+					aria-label="Favorite Color"
+					class="language-btns-container"
 				>
-				<a class="nav-link" href="#about" routerLinkActive="active"
-					>ABOUT ME</a
-				>
-				<a class="nav-link" href="#portfolio" routerLinkActive="active"
-					>PORTFOLIO</a
-				>
+					<mat-button-toggle
+						(click)="selectedLanguage = 'de'"
+						[class.selectedLanguage]="selectedLanguage === 'de'"
+						class="language-btn selectedLanguage"
+						value="red"
+						>DE</mat-button-toggle
+					>
+					<mat-button-toggle
+						(click)="selectedLanguage = 'en'"
+						[class.selectedLanguage]="selectedLanguage === 'en'"
+						class="language-btn selectedLanguage"
+						value="green"
+						>EN</mat-button-toggle
+					>
+				</mat-button-toggle-group>
 			</div>
 
 			<button

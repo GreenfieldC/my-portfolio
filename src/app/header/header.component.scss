@@ -39,18 +39,53 @@ nav {
 		}
 
 		.links-btn-container {
-			.links-container {
-				display: none;
-				gap: 60px;
+			display: flex;
+			gap: 24px;
 
-				a {
-					color: #fff;
-					text-decoration: none;
-					transition: all 125ms ease-in-out;
+			.links-language-btn-container {
+				display: flex;
+				justify-content: flex-start;
+				gap: 24px;
 
-					&:hover {
-						color: $pink;
+				.links-container {
+					display: none;
+					gap: 60px;
+					align-items: center;
+
+					a {
+						color: #fff;
+						text-decoration: none;
 						transition: all 125ms ease-in-out;
+
+						&:hover {
+							color: $pink;
+							transition: all 125ms ease-in-out;
+						}
+					}
+				}
+
+				.language-btns-container {
+					border-radius: unset;
+
+					* {
+						line-height: 0px !important;
+					}
+					.language-btn {
+						display: flex;
+						align-items: center;
+						height: 36px !important;
+						background-color: grey !important;
+						border: 1px solid white !important;
+
+						&:hover {
+							background-color: $green !important;
+							color: $pink;
+						}
+					}
+
+					.selectedLanguage {
+						background-color: $green !important;
+						color: $pink;
 					}
 				}
 			}
