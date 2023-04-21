@@ -1,13 +1,13 @@
 @import 'variables';
 
 .button-selected {
-	background-color: $primary-color !important;
+	background-color: $pink !important;
 }
 
 button {
 	background-color: transparent;
 	border-radius: unset;
-	border: 2px solid $primary-color !important;
+	border: 2px solid $pink !important;
 	color: white !important;
 	line-height: 1;
 	flex-basis: 100%;
@@ -15,7 +15,7 @@ button {
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: $primary-color;
+		background-color: $pink;
 	}
 }
 
@@ -67,7 +67,7 @@ button {
 				}
 
 				h3 {
-					color: $primary-color;
+					color: $pink;
 					font-weight: 700;
 				}
 
@@ -77,14 +77,14 @@ button {
 				}
 
 				button {
-					color: $primary-color !important;
+					color: $pink !important;
 					font-weight: 500;
 					background-color: white !important;
 
 					&:hover,
 					&:focus,
 					&:active {
-						background-color: $primary-color !important;
+						background-color: $pink !important;
 						color: white !important;
 					}
 				}

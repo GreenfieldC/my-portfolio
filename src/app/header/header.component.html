@@ -22,11 +22,9 @@
 			</div>
 
 			<button
+				(click)="openSideMenu = !openSideMenu"
 				class="navbar-toggler"
 				type="button"
-				data-bs-toggle="offcanvas"
-				data-bs-target="#offcanvasNavbar"
-				aria-controls="offcanvasNavbar"
 				aria-label="Toggle navigation"
 			>
 				<svg
@@ -49,28 +47,27 @@
 		</div>
 
 		<div
-			class="offcanvas offcanvas-end"
+			class="sideMenu"
+			[class.openSideMenu]="openSideMenu === true"
 			tabindex="-1"
-			id="offcanvasNavbar"
+			id="sideMenu"
 			aria-labelledby="offcanvasNavbarLabel"
 		>
-			<button
-				type="button"
-				class="btn-close btn-close-white"
-				data-bs-dismiss="offcanvas"
-				aria-label="Close"
-			></button>
-
 			<div class="offcanvas-body">
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 					<a
-						class="nav-link"
-						href="#greeting"
+						(click)="closeSideMenu()"
+						routerLink=""
 						routerLinkActive="active"
 						>HOME</a
 					>
-					<a href="#portfolio" routerLinkActive="active">PORTFOLIO</a>
-					<a href="#about">ABOUT ME</a>
+					<a
+						(click)="closeSideMenu()"
+						href="#portfolio"
+						routerLinkActive="active"
+						>PORTFOLIO</a
+					>
+					<a (click)="closeSideMenu()" href="#about">ABOUT ME</a>
 				</ul>
 			</div>
 		</div>

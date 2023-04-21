@@ -25,7 +25,7 @@ export class AboutMeComponent {
 		{
 			title: 'New challenges',
 			img: 'plane',
-			note: 'I am now looking forward to finding my first job as a frontend developer. I am excited to deepen my knowledge and skills in this field and to contribute to the creation of innovative software products.',
+			note: 'I am now looking forward to finding my first job as a junior frontend developer. I am excited to deepen my knowledge and skills in this field and to contribute to the creation of innovative software products.',
 		},
 	];
 }
