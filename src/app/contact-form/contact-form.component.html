@@ -34,17 +34,26 @@
 			/>
 
 			<label>Message</label>
-			<textarea
-				#messageField
-				name="message"
-				placeholder="Enter your text *"
-				matInput
-				required
-			></textarea>
+			<div class="textarea-animation-container">
+				<textarea
+					#messageField
+					name="message"
+					placeholder="Enter your text *"
+					matInput
+					required
+				></textarea>
+
+				<div
+					class="feedback-animation-container"
+					[class.d-none]="emailSent === false"
+				>
+					<span [class.email-sent]="emailSent === true"
+						>Your email has been sent successfully.</span
+					>
+				</div>
+			</div>
 
 			<button #sendButton>Send</button>
 		</form>
 	</div>
 </div>
-
-<!-- <input matInput placeholder="Enter your email address *" [formControl]="email" required /> -->

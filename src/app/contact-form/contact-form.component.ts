@@ -16,6 +16,8 @@ export class ContactFormComponent implements OnInit {
 
 	ngOnInit(): void {}
 
+	emailSent: boolean = false;
+
 	async sendEmail() {
 		this.disableInputFields();
 
@@ -43,11 +45,10 @@ export class ContactFormComponent implements OnInit {
 	 * Animation "Email has been sent"
 	 */
 	confirmEmail() {
-		let btn = this.sendButton.nativeElement;
-		btn.innerHTML = 'Email has been sent';
+		this.emailSent = true;
 		setTimeout(() => {
-			btn.innerHTML = 'Send';
-		}, 2000);
+			this.emailSent = false;
+		}, 4000);
 	}
 
 	/**
@@ -58,7 +59,6 @@ export class ContactFormComponent implements OnInit {
 		this.emailField.nativeElement.disabled = true;
 		this.messageField.nativeElement.disabled = true;
 		this.sendButton.nativeElement.disabled = true;
-		console.log(this.sendButton);
 	}
 
 	/**

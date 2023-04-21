@@ -4,6 +4,13 @@
 	background-color: $pink !important;
 }
 
+.subtitle {
+	color: white !important;
+	text-align: center;
+	font-size: 1rem;
+	padding-bottom: 24px;
+}
+
 button {
 	background-color: transparent;
 	border-radius: unset;
@@ -113,12 +120,6 @@ button {
 			gap: 36px !important;
 		}
 	}
-
-	/* button {
-		min-width: 128px !important;
-		height: 70px !important;
-		font-size: 18px;
-	} */
 }
 
 @media screen and (min-width: 1025px) {
