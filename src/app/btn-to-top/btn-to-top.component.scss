@@ -4,25 +4,17 @@
 	width: 100% !important;
 	padding: unset;
 	margin: unset;
-}
 
-/* a {
-	margin-left: auto;
-} */
-
-img {
-	transform: rotate(180deg);
-	cursor: pointer;
+	img {
+		transform: rotate(180deg);
+		cursor: pointer;
+	}
 }
 
 @media screen and (min-width: 480px) {
 	.container {
 		justify-content: center;
 		align-items: center;
-
-		/* a {
-			margin-left: unset;
-		} */
 	}
 }
 

@@ -4,78 +4,81 @@
 	justify-content: center;
 	align-items: center;
 	padding-top: 64px;
-}
 
-h2 {
-	text-align: center;
-}
+	h2 {
+		text-align: center;
+	}
 
-.skills-container {
-	display: flex;
-	justify-content: center;
-	gap: 10px;
-	flex-wrap: wrap;
-	padding: 16px;
-	max-width: 380px;
-	overflow: hidden;
-}
+	.skills-container {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		flex-wrap: wrap;
+		padding: 16px;
+		max-width: 380px;
+		overflow: hidden;
 
-.skill-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	position: relative;
-	width: 107.66px;
-	height: 70.57px;
-	margin-top: 41.23px;
-	background-color: white;
-	border-radius: 6px;
-}
+		.skill {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			position: relative;
+			width: 107.66px;
+			height: 70.57px;
+			margin-top: 41.23px;
+			background-color: white;
+			border-radius: 6px;
 
-.skill-icon {
-	position: absolute;
-	left: 0px;
-	right: 0;
-	top: -18px;
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 35px;
-	height: 35px;
-	background-color: white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
-}
+			.skill-icon {
+				position: absolute;
+				left: 0px;
+				right: 0;
+				top: -18px;
+				margin: auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 35px;
+				height: 35px;
+				background-color: white;
+				border-radius: 50%;
+				box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
 
-img {
-	width: 16px;
-	height: 16px;
+				img {
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 801px) {
 	.section {
 		background-color: #131111;
-	}
 
-	.skills-container {
-		max-width: 601px;
-		padding-bottom: 64px;
-	}
+		.skills-container {
+			max-width: 601px;
+			padding-bottom: 64px;
 
-	.skill-container {
-		width: 182.97px;
-		height: 119.92px;
-	}
+			.skill {
+				width: 182.97px;
+				height: 119.92px;
 
-	.skill-icon {
-		width: 60.31px;
-		height: 60.31px;
-	}
+				.skill-icon {
+					width: 60.31px;
+					height: 60.31px;
 
-	img {
-		height: 30px;
-		width: auto;
+					img {
+						height: 30px;
+						width: auto;
+					}
+				}
+				.skill-name {
+					font-size: 18px;
+				}
+			}
+		}
 	}
 }
