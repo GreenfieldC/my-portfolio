@@ -105,7 +105,7 @@
 
 @media screen and (min-width: 1025px) and (max-height: 800px) {
 	.btn-container {
-		padding: 66px;
+		padding: 66px !important;
 	}
 }
 
@@ -113,5 +113,11 @@
 	.profile-image {
 		height: 300px !important;
 		min-width: 300px;
+	}
+}
+
+@media screen and (max-height: 700px) {
+	.btn-container {
+		padding: 66px !important;
 	}
 }
