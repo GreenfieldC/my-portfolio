@@ -21,8 +21,6 @@ export class ContactFormComponent implements OnInit {
 	async sendEmail() {
 		this.disableInputFields();
 
-		/* Animation "Email is being sent" */
-
 		/* Getting date to send */
 		let formData = new FormData();
 		formData.append('name', this.nameField.nativeElement.value);
@@ -36,7 +34,7 @@ export class ContactFormComponent implements OnInit {
 
 		/* Animation "Email has been sent" */
 		this.confirmEmail();
-		/* Reaktivierung und löschen der Inputfelder */
+
 		this.clearInputFields();
 		this.enableInputFields();
 	}
