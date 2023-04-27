@@ -16,6 +16,7 @@ body {
 
 html {
 	overflow-x: hidden !important;
+	scroll-padding-top: 64px;
 }
 
 body::-webkit-scrollbar {
@@ -92,8 +93,37 @@ h2 {
 }
 
 @media screen and (min-width: 1025px) {
+	html {
+		scroll-padding-top: 86px;
+	}
+
 	h2 {
 		font-size: 2.25rem !important;
+	}
+
+	body::-webkit-scrollbar {
+		display: flex;
+	}
+
+	/* ===== Scrollbar CSS ===== */
+	/* Firefox */
+	body {
+		scrollbar-width: auto;
+		scrollbar-color: #2dfcd8 #00000000;
+	}
+
+	/* Chrome, Edge, and Safari */
+	body::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	body::-webkit-scrollbar-track {
+		background: #00000000;
+	}
+
+	body::-webkit-scrollbar-thumb {
+		background-color: #2dfcd8;
+		border-radius: 10px;
 	}
 }
 
