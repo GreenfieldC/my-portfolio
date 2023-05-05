@@ -10,22 +10,22 @@ export class AboutMeComponent {
 		{
 			title: 'My journey began',
 			img: 'walking-person',
-			note: 'In spring 2022, I began teaching myself JS, HTML, and CSS online through tutorials.',
+			note: 'Because of my growing interest in how to code I began teaching myself JS, HTML, and CSS online through tutorials.',
 		},
 		{
 			title: 'I fell in love',
 			img: 'heart',
-			note: 'Soon after I began learning, I fell in love with coding and decided to pursue it as a career.',
+			note: 'Soon after I began learning, I fell in love with coding and and coding became a major interest of mine. Because of this, I decided to pursue a career in frontend development.',
 		},
 		{
 			title: 'I searched',
 			img: 'magnifying-glass',
-			note: 'To achieve my goal of becoming equipped for frontend development, I decided to join the "Developer Akademie" in Munich.',
+			note: 'To achieve my goal of becoming proficient in frontend development, I joined the "Developer Akademie" (DA) in Munich where I worked on individual and group projects and received regular support and feedback from professional programmers.',
 		},
 		{
 			title: 'New challenges',
 			img: 'plane',
-			note: 'I am now looking forward to finding my first job as a junior frontend developer. I am excited to deepen my knowledge and skills in this field and to contribute to the creation of innovative software products.',
+			note: 'Being trained at the DA reinforced my passion for coding and I am now looking forward to building on my experience  and starting my career in a junior developer position within a motivated software team',
 		},
 	];
 }
