@@ -27,14 +27,14 @@ export class MyWorkComponent implements OnInit {
 			github: 'https://github.com/GreenfieldC/elPolloLoco',
 		},
 
-		{
+		/* 	{
 			title: 'Ring of Fire',
 			category: 'angular',
 			description: 'A card game, that works on multiple devices.',
 			img: 'ring-of-fire',
 			site: 'https://ring-of-fire.christian-greenfield.de',
 			github: 'https://github.com/GreenfieldC/ringoffire',
-		},
+		}, */
 
 		{
 			title: 'My Portfolio',
