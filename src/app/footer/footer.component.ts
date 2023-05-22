@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 	styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-	linkedInLink: string = 'http://www.linkedin.com/in/christian-greenfield';
+	linkedInLink: string = 'https://www.linkedin.com/in/christian-greenfield/';
+
 	xingLink: string = 'https://www.xing.com/profile/Christian_Greenfield';
 	gitHubLink: string = 'https://github.com/GreenfieldC';
 }

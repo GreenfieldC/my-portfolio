@@ -53,6 +53,8 @@
 				.project-img {
 					width: 274px;
 					height: 227.69px;
+					object-fit: cover;
+					position: center;
 				}
 
 				.project-details-overlay {
@@ -138,14 +140,18 @@
 		.projects-container {
 			max-width: 1150px !important;
 
-			.project-img {
-				width: 367px !important;
-				height: auto !important;
-			}
+			.project-on-display {
+				.project-img {
+					height: 304.61px !important;
+					width: 367px !important;
+					object-fit: cover !important;
+					position: center;
+				}
 
-			.btns-container {
-				padding-top: 36px;
-				gap: 36px !important;
+				.btns-container {
+					padding-top: 36px;
+					gap: 12px !important;
+				}
 			}
 		}
 	}

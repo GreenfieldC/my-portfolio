@@ -27,14 +27,14 @@ export class MyWorkComponent implements OnInit {
 			github: 'https://github.com/GreenfieldC/elPolloLoco',
 		},
 
-		/* 	{
+		{
 			title: 'Ring of Fire',
 			category: 'angular',
 			description: 'A card game, that works on multiple devices.',
 			img: 'ring-of-fire',
 			site: 'https://ring-of-fire.christian-greenfield.de',
 			github: 'https://github.com/GreenfieldC/ringoffire',
-		}, */
+		},
 
 		{
 			title: 'My Portfolio',
@@ -43,6 +43,14 @@ export class MyWorkComponent implements OnInit {
 			img: 'portfolio',
 			site: '#header',
 			github: 'https://github.com/GreenfieldC/my-portfolio',
+		},
+		{
+			title: 'Pokedex',
+			category: 'js',
+			description: 'A simple library of pokemons with API.',
+			img: 'pokedex',
+			site: 'https://pokedex.christian-greenfield.de',
+			github: 'https://github.com/GreenfieldC/pokedex',
 		},
 	];
 
